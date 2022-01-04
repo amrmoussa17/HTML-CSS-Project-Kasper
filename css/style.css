@@ -2,6 +2,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%); 
+    --section-padding: 100px 0;
 }
 /* End Variables */
 /* start Global Rules */
@@ -18,7 +19,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 ul {
     list-style-type: none;
@@ -48,6 +49,47 @@ ul {
     }
 }
 /* End Global Rules */
+/* Start Components  */
+.main-heading {
+    text-align: center;
+}
+.main-heading h2 {
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    position: relative;
+}
+.main-heading h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 121px;
+    background-color: #333;
+    bottom: -30px;
+}
+.main-heading h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -38px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #333;
+}
+.main-heading p {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 100px;
+    line-height: 1.8;
+    color: #777;
+}
+/* End Components  */
 /* Start Header */
 header {
     position: absolute;
@@ -229,6 +271,47 @@ header .container .form i {
     border: 1px solid var(--main-color);
 }
 /* End Landing */
+/* Start Services */
+.services {
+    padding: var(--section-padding);
+}
+.services .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+.services .srv-box {
+    display: flex;
+}
+.services .srv-box i {
+    text-align: center;
+    margin-right: 50px;
+}
+@media (max-width:767px) {
+    .services .services-container {
+        display: block;
+    }
+    .services .srv-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .services .srv-box i {
+        margin: 50px 0 10px 0;
+    }
+}
+.services .srv-box .text {
+    text-align: center;
+}
+.services .srv-box .text h3 {
+    color: var(--main-color);
+    margin-bottom: 25px;
+}
+.services .srv-box .text p {
+    color: #777;
+    line-height: 1.8;
+}
+/* End Services */
 
 
 
