@@ -194,6 +194,7 @@ header .container .form i {
     position: relative;
 }
 .landing .overlay {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -439,6 +440,74 @@ header .container .form i {
     text-transform: uppercase;
 }
 /* End design  */
+/* start video  */
+.video {
+    position: relative;
+}
+.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%)
+}
+.video video {
+    width: 100%;
+}
+.video .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--transparent-color);
+    width: 100%;
+    text-align: center;
+    padding: 60px;
+} 
+.video .text h2 {
+    padding: 10px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.video .text p {
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.video .text button {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid black;
+}
+/* End video  */
+/* Start About  */
+.about {
+    padding-top: 100px;
+    overflow: hidden;
+}
+.about .image {
+    text-align: center;
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+}
+@media(max-width: 767px) {
+    .about .image {
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+.about .image img {
+    width: 100%;
+}    
+
+/* End About  */
+
 
 
 
