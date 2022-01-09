@@ -833,7 +833,7 @@ header .container .form i {
     left: 6px;
     transform: translateY(-50%);
 }
-.subscribe .container form input[type="mail"] {
+.subscribe .container form input[type="email"] {
     padding: 15px 15px 15px 30px;
     border: 1px solid white;
     border-right: none;
@@ -841,7 +841,7 @@ header .container .form i {
     width: calc(100% - 120px)
 
 }
-.subscribe .container form input[type="mail"]::placeholder {
+.subscribe .container form input[type="email"]::placeholder {
     color:white;
 }
 .subscribe .container form input[type="submit"] {
@@ -852,7 +852,6 @@ header .container .form i {
     padding: 15px 20px;
     width: 120px;
 }
-
 .subscribe .container p {
     color: white;
     padding: 15px;
@@ -863,6 +862,92 @@ header .container .form i {
     }
 }
 /* End Subscribe */
+/* Start contact us  */
+.contact {
+    padding: var(--section-padding);
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+.contact .content form {
+    flex-basis: 60%
+}
+.contact .content form input[type="text"],
+.contact .content form input[type="email"] {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .content form input[type="text"]:focus,
+.contact .content form input[type="email"]:focus {
+    outline: none;
+}
+.contact .content form textarea {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.contact .content form textarea:focus {
+    outline: none;
+}
+.contact .content form input[type="submit"] {
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    float: right;
+}
+@media (max-width:767px) {
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.contact .content .info {
+    flex-basis: 30%;
+}
+.contact .content .info h4:first-of-type {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.contact .content .info .phone {
+    display: block;
+    padding: 10px 0;
+    color: #777;
+}
+.contact .content .info h4:nth-of-type(2) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 50px 0 20px 0;
+}
+@media (max-width:767px) {
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 20px;
+    }
+}
+.contact .content .info address {
+    line-height: 2;
+    color: #777;
+}
+@media (max-width:767px) {
+    .contact .content .info address {
+        margin-bottom: 40px;
+    }
+}
 
+/* End contact us  */
 
 
