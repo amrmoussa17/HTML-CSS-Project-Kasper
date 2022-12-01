@@ -8,7 +8,7 @@ template to work with.
 
 ## Live Demo 
 
-[Live demo](https://amrmoussa17.github.io/HTML-CSS-Project-Kasper/)
+[Live demo](https://kasper-2133d9.netlify.app/)
 
 ## Getting Started
 You can download the page by clicking the code button and select Download ZIP or if you are a developer you can copy https link and use your favorite command line git interface and write `git clone [https link] `
